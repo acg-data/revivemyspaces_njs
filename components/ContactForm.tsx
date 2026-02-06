@@ -80,7 +80,7 @@ export default function ContactForm() {
           <p className="text-gray-600 text-lg">Get a free consultation and quote</p>
         </div>
 
-        <div className="bg-white rounded-2xl p-8 shadow-lg">
+        <div className="glass-card rounded-2xl p-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>

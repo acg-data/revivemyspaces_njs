@@ -3,8 +3,10 @@ import SocialProof from '@/components/SocialProof';
 import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
 import Portfolio from '@/components/Portfolio';
-import Comparison from '@/components/Comparison';
+import Testimonials from '@/components/Testimonials';
+import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
+import ROICalculator from '@/components/ROICalculator';
 import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
@@ -15,8 +17,10 @@ export default function Home() {
       <HowItWorks />
       <Features />
       <Portfolio />
-      <Comparison />
+      <Testimonials />
+      <Pricing />
       <FAQ />
+      <ROICalculator />
       <ContactForm />
     </div>
   );

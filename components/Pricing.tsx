@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Check } from 'lucide-react';
+import { Check, Star } from 'lucide-react';
 
 export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -58,12 +58,13 @@ export default function Pricing() {
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-2xl p-8 shadow-sm border-2 transition-all hover:shadow-lg ${
-                plan.popular ? 'border-black' : 'border-transparent'
+              className={`relative glass-card rounded-2xl p-8 transition-all hover:shadow-xl hover:scale-[1.02] ${
+                plan.popular ? 'ring-2 ring-black' : ''
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-1 rounded-full text-sm font-bold">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-1 rounded-full text-sm font-bold flex items-center gap-1">
+                  <Star className="w-4 h-4" />
                   Most Popular
                 </div>
               )}
@@ -83,7 +84,7 @@ export default function Pricing() {
               </ul>
               <a
                 href="#contact"
-                className={`block w-full text-center py-3 rounded-lg font-bold transition-colors ${
+                className={`block w-full text-center py-3 rounded-lg font-bold transition-all hover:shadow-lg ${
                   plan.popular
                     ? 'bg-black text-white hover:bg-gray-800'
                     : 'bg-gray-100 text-black hover:bg-gray-200'

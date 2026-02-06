@@ -27,7 +27,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-black/10">
+    <nav className="fixed w-full z-50 transition-all duration-300 nav-glass">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <Link href="/" className="flex items-center gap-2 group cursor-pointer">
