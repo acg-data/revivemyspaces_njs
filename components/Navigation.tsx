@@ -58,12 +58,6 @@ export default function Navigation() {
             >
               Portfolio
             </button>
-            <button 
-              onClick={() => scrollToSection('pricing')} 
-              className="text-sm font-semibold text-gray-600 hover:text-black transition-colors"
-            >
-              Pricing
-            </button>
             <Link 
               href="/blog" 
               className="text-sm font-semibold text-gray-600 hover:text-black transition-colors"
@@ -110,12 +104,6 @@ export default function Navigation() {
               className="block w-full text-left px-4 py-3 text-gray-700 font-medium hover:bg-gray-50 rounded-lg transition-colors"
             >
               Portfolio
-            </button>
-            <button 
-              onClick={() => scrollToSection('pricing')} 
-              className="block w-full text-left px-4 py-3 text-gray-700 font-medium hover:bg-gray-50 rounded-lg transition-colors"
-            >
-              Pricing
             </button>
             <Link 
               href="/blog" 

@@ -4,9 +4,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
 import Portfolio from '@/components/Portfolio';
 import Comparison from '@/components/Comparison';
-import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
-import ROICalculator from '@/components/ROICalculator';
 import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
@@ -18,9 +16,7 @@ export default function Home() {
       <Features />
       <Portfolio />
       <Comparison />
-      <Pricing />
       <FAQ />
-      <ROICalculator />
       <ContactForm />
     </div>
   );
